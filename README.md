@@ -10,7 +10,7 @@ Most beginners approach data cleaning without a plan — jumping randomly betwee
 
 This project follows a **clear, structured methodology** instead:
 
-![No Plan vs. Clear Structure — The 6-step data cleaning framework](post/1-no%20plan%20clear%20structure.png)
+![No Plan vs. Clear Structure — The 6-step data cleaning framework](screenshots/1-no%20plan%20clear%20structure.png)
 
 ---
 
@@ -25,13 +25,21 @@ data_clening_order/
 │   └── sales_monthly.csv
 ├── docs/                   # Detailed documentation
 │   └── data_cleaning_guide.md
-├── screenshots/            # Power Query result screenshots
+├── screenshots/            # Power Query results & step-by-step workflow diagrams
+│   ├── 1-no plan clear structure.png
+│   ├── 2-connect data.png
+│   ├── 3-filter data.png
+│   ├── 4-clean data.png
+│   ├── 5-transform data.png
+│   ├── 6-combine.png
+│   ├── 6-note.png
+│   ├── 7-clean up.png
 │   ├── 1-sales 1.jpg
 │   ├── 1-sales 2.jpg
 │   ├── categories.jpg
 │   ├── orders.jpg
 │   └── orders_feb.jpg
-├── post/                   # Visual step-by-step workflow diagrams
+├── post/                   # Local post folder (ignored in Git)
 ├── .gitignore
 ├── LICENSE
 ├── README.md
@@ -71,7 +79,7 @@ Separate transactional files per month that need to be combined into a single Or
 
 Import the source tables into Power Query from their respective CSV files.
 
-![Step 1 — Connect Data: Bring data from various sources into Power Query](post/2-connect%20data.png)
+![Step 1 — Connect Data: Bring data from various sources into Power Query](screenshots/2-connect%20data.png)
 
 **Queries created:**
 | Query | Source File |
@@ -87,7 +95,7 @@ Import the source tables into Power Query from their respective CSV files.
 
 Reduce the dataset to only relevant rows and columns **before** doing any transformations. This improves performance and keeps the workflow clean.
 
-![Step 2 — Filter Data: Remove unnecessary columns, blank rows, and irrelevant records](post/3-filter%20data.png)
+![Step 2 — Filter Data: Remove unnecessary columns, blank rows, and irrelevant records](screenshots/3-filter%20data.png)
 
 **Operations performed on Sales:**
 - ✅ Removed unnecessary columns (e.g., `Technical_Log_ID`)
@@ -100,7 +108,7 @@ Reduce the dataset to only relevant rows and columns **before** doing any transf
 
 Fix data quality problems — standardize text, handle missing values, and eliminate duplicates.
 
-![Step 3 — Clean Data: Remove duplicates, standardize text, handle missing values](post/4-clean%20data.png)
+![Step 3 — Clean Data: Remove duplicates, standardize text, handle missing values](screenshots/4-clean%20data.png)
 
 **Text cleaning:**
 - `Trim Text` — Remove leading/trailing whitespace
@@ -128,7 +136,7 @@ Fix data quality problems — standardize text, handle missing values, and elimi
 
 Reshape and restructure columns — split compound fields, extract substrings, assign correct data types, and create new calculated columns.
 
-![Step 4 — Transform Data: Split columns, merge columns, extract parts](post/5-transform%20data.png)
+![Step 4 — Transform Data: Split columns, merge columns, extract parts](screenshots/5-transform%20data.png)
 
 **Data types:**
 - `Order_Id` → Whole Number
@@ -156,7 +164,7 @@ Reshape and restructure columns — split compound fields, extract substrings, a
 
 Integrate multiple tables into unified datasets using Append (union rows) and Merge (join columns).
 
-![Step 5 — Combine: Merge adds columns (SQL JOIN), Append adds rows (SQL UNION)](post/6-combine.png)
+![Step 5 — Combine: Merge adds columns (SQL JOIN), Append adds rows (SQL UNION)](screenshots/6-combine.png)
 
 **Append Queries:**
 - `Orders` + `orders_feb` → Combined Orders table (January + February in one table)
@@ -179,7 +187,7 @@ Expand → Category_Name (e.g., "Electronics")
 
 > **💡 Note:** The order of combine vs. clean steps matters. This project uses two common Power Query flows:
 
-![Power Query flow patterns: Combine → Clean → Transfer vs. Clean → Transfer → Combine](post/6-note.png)
+![Power Query flow patterns: Combine → Clean → Transfer vs. Clean → Transfer → Combine](screenshots/6-note.png)
 
 ---
 
@@ -187,7 +195,7 @@ Expand → Category_Name (e.g., "Electronics")
 
 Final preparation — remove helper columns, standardize names, and arrange columns in a logical business order.
 
-![Step 6 — Clean Up: Remove unnecessary columns, rename tables and columns, reorder logically](post/7-clean%20up.png)
+![Step 6 — Clean Up: Remove unnecessary columns, rename tables and columns, reorder logically](screenshots/7-clean%20up.png)
 
 **Operations:**
 - ✅ Remove unnecessary/helper columns
