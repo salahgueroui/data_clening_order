@@ -1,0 +1,14 @@
+OrderID,Product_Info,First_Name,Last_Name,Email,Customer_ID,Amount,Price,Order_Date,Technical_Log_ID
+1001,"Laptop Pro | ELEC",#ANna,ScHmidt,ANNA@email.com,C-1001-DE,120.567,1200.499,D2024-01-05,SYS-88721-XZ
+1002,"Gaming Mouse | ACC",#Jean,MARTIN,Jean@email.com,C-1002-FR,90.344,80.499,D2024-01-06,SYS-88722-XZ
+1003,"Mechanical Keyboard | ACC",   Luca,Rossi,LUCA@email.com,C-1003-IT," ",150.899,D2024-01-07,SYS-88723-XZ
+1004,"Laptop Air | ELEC",CARLOS, DIAZ,carlos@email.com ,C-1004-ES,200.678,950.756,D2024-02-08,SYS-88724-XZ
+1005,"Laptop Pro | ELEC",Julia,Weber,Julia@email.com,C-1005-DE,50.899,1200.222,D2024-02-09,SYS-88725-XZ
+1001,"Laptop Pro | ELEC",#Anna,schmidt,anna@email.com,C-1001-DE,120.567,1200.499,D2024-01-05,SYS-88721-XZ
+1007,"4K Monitor",Sofia  ,lopez,SOFIA@email.com,C-1006-ES,310.333,600.989,D2024-02-10,SYS-88726-XZ
+,,,,,,,,,
+1008,"Office Chair | FURN",Marco,Bianchi,  ,C-1007-IT,210.444,300.899,D2024-03-11,SYS-88727-XZ
+1009,"Desk Lamp | FURN",#Claire  , Dubois,CLAIRE@email.com,C-1008-FR,75.222,60.789,D2024-03-12,SYS-88728-XZ
+,,,,,,,,,
+1010," ",#paul,   durand,Caul@email.com ,C-1009-FR,45.678,,D2024-99-13,SYS-88729-XZ
+,,,,,,,,,

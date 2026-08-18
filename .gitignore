@@ -1,0 +1,15 @@
+# Power BI Desktop temporary / user files
+*.pbix.user
+*.pbit.user
+*.pbix.temp
+*.pbi.user
+
+# Office temporary files
+~$*
+
+# OS files
+Thumbs.db
+desktop.ini
+
+# Post folder
+post/
